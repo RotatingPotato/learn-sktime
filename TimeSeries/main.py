@@ -33,7 +33,7 @@ from sktime.forecasting.base import ForecastingHorizon
 fh = ForecastingHorizon(y_test.index, is_relative=False)
 print(fh)
 
-# 進行預測
+# 預測最後的數值
 from sktime.forecasting.naive import NaiveForecaster
 from sktime.performance_metrics.forecasting import smape_loss
 forecaster = NaiveForecaster(strategy="last")
